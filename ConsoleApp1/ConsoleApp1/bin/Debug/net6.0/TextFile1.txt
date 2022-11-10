@@ -1,0 +1,5 @@
+﻿Hans.Mueller@stud.bbbaden.ch;Tanzen;Fussball;Basketball;
+Fritz.Schwab@stud.bbbaden.ch;Singen;Nähen;Eichhörnchenjagd
+Verena.Inher@stud.bbbaden.ch;Reifenwechsel;Nähen;Fussball
+Martin.Allensbach@stud.bbbaden.ch;Fussball;Eichhörnchenjagd;Nähen
+Test.Extracamps@stud.test.ts;Basketball;Fussball;Singen
