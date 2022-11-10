@@ -22,7 +22,7 @@ WIr werden eine Konsolenapplikation erstellen, die Benutzer zu Gruppen zuteilen 
 | 2  | muss                 |Funktional| Als ein Benutzer möchte ich eine Datei mit drei Workshops eingeben können, damit das Programm mich in einer dieser Kurse einteilen kann.|
 | 3  | muss            |Qualität| Als ein Benutzer möchte ich Prioritäten für die Workshops setzten, damit das Programm best möglich alle Teilnehmer in einen Workshop einteilen kann.|
 | 4  | muss          |Funktional| Als ein Benutzer möchte ich, dass das Programm mich möglichst in einen Workshop zuteilt, den ich auch besuchen möchte.|
-| 5  | kann         | Funktional     | Als ein Benutzer möchte ich, dass das Programm mit Try Catch arbeiten kann, damit er eine Rückmeldung erhält, falls eine falsche eingabe gemacht wurde.|
+| 5  | kann         | Funktional     | Als ein Benutzer möchte ich, dass das Programm den Benutzer bei Falscheingaben warnt, damit er eine Rückmeldung erhält, falls eine falsche Eingabe gemacht wurde.|
 | 6  |muss                |Qualität| Als Benutzer möchte ich nicht weniger als 4 Personen und nicht mehr als 20 in dem selben Workshop haben.|
 
 
@@ -31,11 +31,10 @@ WIr werden eine Konsolenapplikation erstellen, die Benutzer zu Gruppen zuteilen 
 
 | TC-№ | Ausgangslage | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
-| 1.1  |   Programm wurde gestartet| Datei | Danke für die Datei.|
-| 1.2 |   1.1 | Keine | Teilnehmer Nummer und Mailadresse.|
-| 2.1  |     1.1      |  Keine| Priorität 1: Workshop   |
-| 2.2  |     2.1  Workshop 1 wurde korrekt erkannt. |   Keine |  Priorität 2: Wokrshop       |
-| 2.3  |     2.2 Workshop 2 wurde korrekt erkannt.       |  Datei   |  Priorität 3: Workshop              |
+| 1.1  |   Programm wurde gestartet| Datei wurde von Benutzer importiert | Danke für die Datei.|
+| 1.2 |   1.1 | Datei wurde vom Benutzer importiert | Das Programm kann auf die datei zugreifen (keine spezielle Ausgabe)|
+| 2.1  |     1.1      |  Datei wurde von Benutzer importiert| Priorität 1: Workshop   |
+| 2.2  |     2.1 | fdsen können alle ausgelesen werden |  Datei   |  Alle Prioritäten wurden Erkannt |
 | 3.1  |     1.1   |Keine| Korrektes auslesen und zuordnen der Prioritäten.|
 | 4.1  |     Alle Teilnehmer wurden aus der Datei erfasst. Keine | Workshops mit all den Teilnehmern nach Prioritäten eingeteilt, bis Sie voll sind.|
 | 5.1 |     Datei wird gelesen   |  Keine       |   Fehler, Bitte überprüfe die Datei nochmals nach Fehlern.|
