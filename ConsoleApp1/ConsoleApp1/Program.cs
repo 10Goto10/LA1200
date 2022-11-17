@@ -9,7 +9,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int basktballplayers = 0;
+            int basketballplayers = 0;
             int Squirrelhunters = 0;
             int tirechangers = 0;
             int footballplayers = 0;
@@ -54,7 +54,7 @@ namespace ConsoleApp1
             {
                 if (firstchoices[i] == "Basketball")
                 {
-                    basktballplayers++;
+                    basketballplayers++;
                 }
                 else if (firstchoices[i] == "Eichhörnchenjagd")
                 {
@@ -82,7 +82,7 @@ namespace ConsoleApp1
                 }
                 if (secondchoices[i] == "Basketball")
                 {
-                    basktballplayers++;
+                    basketballplayers++;
                 }
                 else if (secondchoices[i] == "Eichhörnchenjagd")
                 {
@@ -110,7 +110,7 @@ namespace ConsoleApp1
                 }
                 if (thirdchoices[i] == "Basketball")
                 {
-                    basktballplayers++;
+                    basketballplayers++;
                 }
                 else if (thirdchoices[i] == "Eichhörnchenjagd")
                 {
