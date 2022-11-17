@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1
+namespace ConsoleApp1
 {
     using System;
     using System.ComponentModel.DataAnnotations;
@@ -9,13 +9,13 @@
     {
         static void Main(string[] args)
         {
-            int basketballwahlen = 0;
-            int eichhoernchenwahlen = 0;
-            int reifenwechselwahlen = 0 ;
-            int fussballwahlen = 0;
-            int singenwahlen = 0;
-            int tanzenwahlen = 0;
-            int naehenwahlen = 0;
+            int basktballplayers = 0;
+            int Squirrelhunters = 0;
+            int tirechangers = 0;
+            int footballplayers = 0;
+            int singers = 0;
+            int dancers = 0;
+            int knitters = 0;
             string path = @"TextFile1.txt";
             using StreamReader streamReader = new StreamReader(path);
             string[] temp = streamReader.ReadToEnd().Split(";");
@@ -25,122 +25,122 @@
             List<string> thirdchoices = new List<string>();
             List<string> choices = new List<string>();
             string[] availablechoices = { "Basketball", "Eichhörnchenjagd", "Reifenwechsel", "Fussball", "Singen", "Tanzen", "Nähen" };
-            int numbero = 0;
+            int j = 0;
             foreach (string k in temp)
             {
-                numbero++;
-                if (numbero > 4)
+                j++;
+                if (j > 4)
                 {
-                    numbero = 1;
+                    j = 1;
                 }
-                if (numbero == 1)
+                if (j == 1)
                 {
                     emails.Add(k);
                 }
-                else if (numbero == 2)
+                else if (j == 2)
                 {
                     firstchoices.Add(k);
                 }
-                else if (numbero == 3)
+                else if (j == 3)
                 {
                     secondchoices.Add(k);
                 }
-                else if (numbero == 4)
+                else if (j == 4)
                 {
-                   thirdchoices.Add(k); 
+                    thirdchoices.Add(k);
                 }
             }
             for (int i = 0; i < emails.Count; i++)
             {
                 if (firstchoices[i] == "Basketball")
                 {
-                    basketballwahlen++;
+                    basktballplayers++;
                 }
                 else if (firstchoices[i] == "Eichhörnchenjagd")
                 {
-                    eichhoernchenwahlen++;
+                    Squirrelhunters++;
                 }
                 else if (firstchoices[i] == "Singen")
                 {
-                    singenwahlen++;
+                    singers++;
                 }
                 else if (firstchoices[i] == "Tanzen")
                 {
-                    tanzenwahlen++;
+                    dancers++;
                 }
                 else if (firstchoices[i] == "Nähen")
                 {
-                    naehenwahlen++;
+                    knitters++;
                 }
                 else if (firstchoices[i] == "Fussball")
                 {
-                    fussballwahlen++;
+                    footballplayers++;
                 }
                 else if (firstchoices[i] == "Reifenwechsel")
                 {
-                    reifenwechselwahlen++;
+                    tirechangers++;
                 }
                 if (secondchoices[i] == "Basketball")
                 {
-                    basketballwahlen++;
+                    basktballplayers++;
                 }
                 else if (secondchoices[i] == "Eichhörnchenjagd")
                 {
-                    eichhoernchenwahlen++;
+                    Squirrelhunters++;
                 }
                 else if (secondchoices[i] == "Singen")
                 {
-                    singenwahlen++;
+                    singers++;
                 }
                 else if (secondchoices[i] == "Tanzen")
                 {
-                    tanzenwahlen++;
+                    dancers++;
                 }
                 else if (secondchoices[i] == "Nähen")
                 {
-                    naehenwahlen++;
+                    knitters++;
                 }
                 else if (secondchoices[i] == "Fussball")
                 {
-                    fussballwahlen++;
+                    footballplayers++;
                 }
                 else if (secondchoices[i] == "Reifenwechsel")
                 {
-                    reifenwechselwahlen++;
+                    tirechangers++;
                 }
                 if (thirdchoices[i] == "Basketball")
                 {
-                    basketballwahlen++;
+                    basktballplayers++;
                 }
                 else if (thirdchoices[i] == "Eichhörnchenjagd")
                 {
-                    eichhoernchenwahlen++;
+                    Squirrelhunters++;
                 }
                 else if (thirdchoices[i] == "Singen")
                 {
-                    singenwahlen++;
+                    singers++;
                 }
                 else if (thirdchoices[i] == "Tanzen")
                 {
-                    tanzenwahlen++;
+                    dancers++;
                 }
                 else if (thirdchoices[i] == "Nähen")
                 {
-                    naehenwahlen++;
+                    knitters++;
                 }
                 else if (thirdchoices[i] == "Fussball")
                 {
-                    fussballwahlen++;
+                    footballplayers++;
                 }
                 else if (thirdchoices[i] == "Reifenwechsel")
                 {
-                    reifenwechselwahlen++;
+                    tirechangers++;
                 }
             }
             //Test
             for (int i = 0; i < emails.Count; i++)
             {
-                Console.WriteLine(emails[i] + " = " + firstchoices[i]);
+                Console.WriteLine(emails[j] + " = " + firstchoices[i]);
             }
         }
     }
